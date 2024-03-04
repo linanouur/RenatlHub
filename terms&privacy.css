@@ -1,0 +1,266 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+
+/*nav bar*/
+* {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-bar {
+    display: flex;
+    background-color: #213555;
+    border-radius: 10px;
+    height: 64px;
+    margin-right: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar img {
+    width: 100px;
+    height: 100px;
+}
+
+.right-nav-bar {
+    padding-right: 1.5em;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-nav-bar ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.right-nav-bar ul li a {
+    text-decoration: none;
+    font-size: 0.8em;
+    list-style: none;
+    color: white;
+}
+
+.nav-bar .right-nav-bar .sign {
+    padding: 0.6em;
+    color: #213555;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #FFFADD;
+}
+
+.nav-bar .right-nav-bar .log {
+    padding: 0.6em;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #FFFADD;
+}
+
+.right-nav-bar li a:hover {
+    color: #FFFADD;
+    text-decoration: underline;
+}
+
+.right-nav-bar li a:active {
+    color: #213555;
+    padding: 0.5em;
+    border-radius: 8px;
+    background-color: #FFFADD;
+}
+
+.nav-bar button:hover {
+    opacity: 0.8;
+}
+
+.nav-bar .menu img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.nav-bar .menu {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .nav-bar .menu {
+        display: block;
+    }
+
+    .right-nav-bar {
+        display: none;
+        position: absolute;
+        top: 56px;
+        width: 100vw;
+
+    }
+
+    .nav-bar .right-nav-bar ul {
+        z-index: 1;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #fffaddc7;
+        align-items: center;
+    }
+
+    .nav-bar .right-nav-bar ul li a {
+        color: #213555;
+    }
+
+    .right-nav-bar ul li .log,
+    .right-nav-bar ul li .sign {
+        background-color: none;
+        border: none;
+    }
+
+    .right-nav-bar ul li a:hover,
+    .right-nav-bar ul li .log:hover,
+    .right-nav-bar ul li .sign:hover {
+        background-color: white;
+        padding: 0.8em;
+        border-radius: 8px;
+        color: #213555;
+
+    }
+}
+
+.title {
+    padding: 1.5%;
+    margin: 1% 0% 0%;
+    text-align: center;
+    background: radial-gradient(circle, #213555 0%, #22598d00 100%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+h1 {
+    color: #FFCC70;
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px 0 30px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.Privacy,
+.Terms {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0%;
+    background-color: rgba(33, 53, 85, 0.1);
+    color: black;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Terms p,
+.Privacy p {
+    margin: auto;
+    padding: 10%;
+    font-weight: 600;
+    text-align: left;
+}
+
+.Terms p b,
+.Privacy p b {
+    font-size: 21px;
+    color: #043461;
+    text-shadow: 1px 1px 3px #213555;
+    padding-left: 2%;
+    line-height: 3;
+}
+
+
+/*Footer*/
+.footer {
+    background-color: #213555;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.left-footer {
+    display: flex;
+    width: 20%;
+    margin-left: 10px;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.left-footer img {
+    width: 220px;
+    height: 220px;
+}
+
+.footer p {
+    color: white;
+    font-size: 0.8em;
+}
+
+.right-footer {
+    display: flex;
+    gap: 40px;
+}
+
+.right-footer .Get-In-Touch,
+.right-footer .quick-links {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.right-footer img {
+    width: 20px;
+    height: 20px;
+}
+
+.right-footer .Get-In-Touch p,
+.right-footer .quick-links p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.right-footer .Get-In-Touch .location-footer,
+.right-footer .Get-In-Touch .phone,
+.right-footer .Get-In-Touch .mail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(173, 168, 168);
+    font-size: 0.8em;
+}
+
+.right-footer .Get-In-Touch .social-media {
+    text-align: center;
+}
+
+.right-footer .quick-links {
+    display: flex;
+    gap: 10px;
+
+}
+
+.right-footer .quick-links a {
+    color: rgb(173, 168, 168);
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.right-footer .quick-links a:hover {
+    font-size: 0.9em;
+}

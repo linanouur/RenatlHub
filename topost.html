@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>    
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="topost.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>  
+    <script src =topost.js></script>
+   
+  
+  </head>
+
+ <body>
+    <form class=" property-sample"  action="topostActual.php" method="post">
+        <div class="searchuser">
+
+            <div class="profile-rectangle">
+              <a href="newprofile.html"> <img src="imagess/user picture.png" alt="" class="profile-pic"> </a>
+              <div class="name-email">
+                <p class="name">Name</p>
+                <p class="email">email address</p>
+              </div>
+      
+            </div>
+            
+      
+          </div>
+
+        <div class="property-form">
+
+            <div class="form-info"> 
+              <div id="form1"  >
+                <div class="input-control">
+                    <p> Name of property </p> 
+                    
+                    <input type="text" placeholder="apartment f3 " class="fill" id="name" > 
+                    <small  id="name-error" class="error" ></small>
+
+                     
+                </div>
+                <div class="input-control">
+                    <p> Town </p>
+                    <input type="text"  class="fill" id="town" name="town"> 
+                    <small  id="town-error" class="error" ></small>
+
+                </div>
+                <div class="input-control">
+                    <p> State </p>
+                    <input type="text"  class="fill" id="state" name="state"> 
+                    <small  id="state-error" class="error" ></small>
+                </div>
+
+                <div class="input-control">
+                    <p> Address </p>
+                    <input type="text" class="fill" id="address" name="address"> 
+                    <small  id="address-error" class="error" ></small>
+
+                </div>
+                <div class="input-control">
+                    <p> Price </p>
+                    <input type="number" class="fill" id="price" name="price"> 
+                    <small  id="price-error" class="error" ></small>
+
+                </div>
+                <div class="input-control">
+                    <p> Category</p>
+                    <select name="category" class="fill" id="category" required>
+
+                        
+                        <option value="Longterm">Long term</option>
+                        <option value="shortterm">short term</option>
+                        <option value="collocation">Collocation</option>
+                        <option value="Events">Events</option> 
+                    </select> 
+                    <small  id="category-error" class="error" ></small>
+                </div>  
+                
+              </div>
+         
+            </div>
+            <div class="image">
+                <input type="file" id="file" accept="image/*" > 
+                <label for="file">upload images </label> 
+                <img src="imagess/addimage.png" alt="image" class="addimage">
+                
+            </div>
+        </div>
+        <div class="posting-procedure" id ="posting-procedure">
+            <div class="agenda-location">
+                <div class="agendaa">
+                    <b class="headlines"> Availability </b> 
+                    <div id="form2" >  
+                      <div class="from1">
+                   <p> From </p>
+                   <input type="text" id="from" name="from"> 
+                  </div> 
+                  
+                 <div class="to1">
+                  <p> to</p>
+                    <input type="text" id="to" name="to">  
+                  </div> 
+                  </div>
+                </div>
+                <div class="location">
+                    <b class="headlines"> Location </b>
+                    <div class="location">
+                        
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.367851513773!2d2.8533943747631665!3d36.689697472278816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fa3bb62c1df43%3A0x4963bf2eb486c3ce!2sSidi%20Abdellah!5e0!3m2!1sen!2sdz!4v1699272485257!5m2!1sen!2sdz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="payment-equipements">
+                <div class="equipements">
+                    <b class="headlines"> Equipements </b> 
+                    <div id="checkboxForm">
+                    <div class="equipements-list"> 
+                      
+                        <div class="first-column-equipements">
+                            <div class="wifi-row"> 
+                                <input  type ="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="./imagess/wifi.png" />
+                                <b class="wifi">Wifi</b>
+                            </div>
+                            <div class="tv-row"> 
+                                <input  type ="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="./imagess/tv.png" />
+                                <b class="tv">TV</b>
+                            </div>
+                            <div class="hairdryer-row"> 
+                                <input  type ="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="imagess/chef.png" />
+                                <b class="hairdryer">Cooking Utencils</b>
+                            </div>
+                            <div class="longterm-row"> 
+                                <input  type ="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="./imagess/long stay.png" />
+                                <b class="longterm">flexible stay</b> 
+                            </div> 
+                            <div class="tv-row" class="additional"> 
+                                <input  type ="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="./imagess/sofa.png" />
+                                <b class="tv">Sofa</b>
+                            </div>
+                        </div>
+                        <div class="second-column-equipements">
+                            <div class="pool-row"> 
+                                <input  type="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="./imagess/washing-machine.png" />
+                                <b class="pool">washing Machine</b>
+                            </div>
+                            <div class="airconditioning-row"> 
+                                <input  type="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="./imagess/ac.png" />
+                                <b class="airconditioning ">Air conditioning</b>
+                            </div>
+                            <div class="breakfast-row"> 
+                                <input  type="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="./imagess/heater.png" />
+                                <b class="breakfast">Heating</b>
+                            </div> 
+                            <div class="breakfast-row"> 
+                                <input  type="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="./imagess/sleeping (1).png" />
+                                <b class="breakfast">Beds</b>
+                            </div> 
+                            <div class="airconditioning-row" class="additional"> 
+                                <input  type="checkbox" name="checkboxGroup"></input>
+                                <img alt="" src="./imagess/gas-stove.png" />
+                                <b class="airconditioning ">Stove</b>
+                            </div>
+                        </div>  
+                      
+                    </div> 
+                  </div>
+                    <button type="submit" id="showEquipmentsBtn" >show all equipements</button>
+                </div> 
+                
+                <div class="postdescription ">  
+                    <b class="headlines" > Upload pictures of ownership contract  </b>   
+                    <div class="description1">
+                        <input type="file" id="file1" accept="image/*" > 
+                         <label for="file1">upload images </label>   
+                         <img src ="imagess/addimage.png"> 
+                         
+                    </div>
+                </div>
+                
+            </div> 
+             
+           
+                <div class="components-description">
+                  <div class="Components">
+                    <b class="headlines"> Components</b> 
+                    <div id="checkboxForm" >
+                    <div class="components-list"> 
+                      
+                        <div class="first-column-components">
+                            <div class="kitchen"> 
+                                <input  type ="checkbox" name="components[]"></input>
+                                <b class="kitchen">Kitchen</b>
+                            </div>
+                            <div class="parking-spot-row"> 
+                                <input  type ="checkbox" name="components[]"></input>
+                              
+                                <b class="parking-spot">Parking Spot </b>
+                            </div>
+                            <div class="swimming-pool-row"> 
+                                <input  type ="checkbox" name="components[]"></input>
+                                <b class="swimming-pool">Swimming Pool</b>
+                            </div>
+                           
+                            
+                        </div>
+                        <div class="second-column-components">
+                            <div class="rooftop-row"> 
+                                <input  type="checkbox" name="checkboxGroup" name="components[]"></input>
+                               
+                                <b class="rooftop">Rooftop</b>
+                            </div>
+                            <div class="garden-row"> 
+                                <input  type="checkbox" name="checkboxGroup" name="components"></input>
+                                <b class="garden">Garden</b>
+                            </div>
+                            <div class="rooms-row"> 
+                                <input  type="text" name="checkboxGroup" name="rooms"></input>
+                                <p class="rooms">Rooms</p>
+                            </div> 
+                            
+                            
+                        </div>  
+                      
+                    </div> 
+                </div>
+                   </div>    
+            
+                   <div class="description2">  
+                    <b class="headlines" > Description </b>   
+                        <input type="text" class="desc" id="description"
+                        required></input>
+                   </div>   
+                   </div>
+                
+                <div class =Details-paymentmethod> 
+                    <div class="details">   
+                        <b class="headlines" > Details </b>   
+                       
+                        <div id="form3"  >
+                            <div class="input-control">
+                                <p>Area </p> 
+                                
+                                <input type="text" placeholder="put area in m2 " class="fill" id="area" > 
+                                <small  id="area-error" class="error" ></small>
+            
+                                 
+                            </div>
+                            <div class="input-control">
+                                <p> View </p>
+                                <input type="text"  class="fill" id="view" > 
+                                <small  id="view-error" class="error" ></small>
+            
+                            </div>
+                            <div class="input-control">
+                                <p> Security </p>
+                                <input type="text"  class="fill" id="security" > 
+                                <small  id="security-error" class="error" ></small>
+                            </div>
+        
+                            <div class="input-control">
+                                <p> Floors </p>
+                                <input type="number" class="fill" id="floors" > 
+                                <small  id="floors-error" class="error" ></small>
+            
+                            </div>
+                            <div class="input-control">
+                                <p> Payment By</p>
+                                <select name="paymentperiod" class="fill" id="paymentperiod" required>
+            
+                                    
+                                    <option value="Months">Months</option>
+                                    <option value="Days">Days</option>
+                                    <option value="Years">Years</option>
+                                    
+                                </select> 
+                                <small  id="payment-error" class="error" ></small>
+                            </div>   
+                            <div class="input-control">
+                                <p> Payment Mehtod </p>
+                                <select name="paymentmethod" class="fill" id="paymentmethod" required>
+            
+                                    
+                                    <option value="BaridiMob">BaridiMob</option>
+                                    <option value="CIB">CIB</option>
+                                    <option value="Cash">Cash</option>
+                                    
+                                </select> 
+                                <small  id="payment-error" class="error" ></small>
+                            </div> 
+                           
+                        </div>
+                </div>
+                
+                
+        </div>  
+        </div>
+       
+        <button type ="submit" class ="reserve-btn"  id="validateButton">Post</button> 
+    </form> 
+   
+</body> 
+
+
+</html>
+

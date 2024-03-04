@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Antic Didone';
+    src: url('path-to-your-font/antic-didone.woff2') format('woff2'),
+         url('path-to-your-font/antic-didone.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.review-container {
+  
+    max-width: 300px;
+    height: 30vh;
+    margin: auto;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.review-container.flip .flipper {
+    transform: rotateY(180deg);
+}
+
+.review-container, .message-container {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    background-color: #FAE6A4; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);  
+    margin-top :7%; 
+    height : 80vh; 
+}
+
+.form-container #feedbackForm {
+  font-family: "Open Sans",sans-serif; ;
+    text-align: center; 
+ 
+}
+
+.form_title { 
+    margin-top : 4%;  
+    
+    text-align: center; 
+    font-size: 25px; 
+    font-weight: 400; 
+    
+}
+
+.form-group {
+    margin-top: 1%; 
+    height : 10%; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1%;
+}
+
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    font-size: 16px;
+    height: 80px;
+    resize: vertical;
+    margin: 20px 0;
+   background-color: #ddd;
+}
+
+.form-group textarea:focus {
+    transform: scale(1.08); 
+  
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-rating > input {
+    display: none;
+}
+
+.star-rating > label {
+    font-size: 25px;
+    color: #ddd;
+    padding: 10px;
+}
+
+.star-rating > input:checked ~ label,
+.star-rating > input:hover ~ label,
+.star-rating > label:hover ,
+.star-rating > label:hover ~ label {
+    color: #FFD700;  
+    transform: scale(1.5);
+}
+
+button {
+    background-color: #ddd;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+button:hover {
+    background-color: #ddd;
+    transform: scale(1.08);
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: 60vh;
+}

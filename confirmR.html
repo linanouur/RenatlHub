@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="confirmR.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" />
+</head>
+
+<body>
+    <div class=" property-sample ">
+        <div class="searchuser">
+
+            <div class="profile-rectangle">
+                <img src="images/user picture.png" alt="" class="profile-pic">
+                <div class="name-email">
+                    <p class="name">Name</p>
+                    <p class="email">email address</p>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+        <div class="property-details">
+            
+                <p class="headlines1">Confirmation of booking </p>
+                <div class="container">
+                    <p class="headlines">Your trip</p>
+                    <div class="your_trip">
+                        <div class="your_trip1">
+                            <label for="date" > date</label>
+
+                            <div class="date">
+                                <div class="from">
+                                    <label for="from">From</label>
+                                    <input type="date" name="" id="from" placeholder="09/12/2023">
+                                </div>
+
+                                <div class="to">
+                                    <label for="to">To</label>
+                                    <input type="date" name="" id="to" placeholder="09/01/2024">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="your_trip2">
+                            <label for="totale_price">Totale price</label>
+                            <input type="number" name="" id="totale_price" placeholder="34000 DA">
+
+                        </div>
+
+
+                        <div class="your_trip3">
+                            <label for="guests">Location</label>
+                            <input type="text" name="" id="guests" min="0" placeholder="sidi abdellah street , Algiers">
+
+                        </div>
+
+                        <div class="your_trip4">
+                            <label for="proprety_rating">Proprety_rating</label>
+                            <input type="number" name="" id="proprety_rating" min="0" max="5" placeholder="3.6">
+
+                        </div>
+
+
+
+                    </div>
+                    <p class="headlines">Contact your host<p>
+                    <div class="contact_your_host_container">
+                        <div class="contact_your_host">
+                            <div class="contact">
+                                <p  class="headlines">First_name</p>
+                                <p class="headlines">Last_name</p>
+                                <p >Phone_number</p>
+                                <p>Email_address</p>
+                            </div>
+
+                            <div class="contact_profile">
+                                <a href=""><img src="/images/user picture.png" alt="profile"></a>
+                                
+                            </div>
+                        </div>
+                        <button id="print"> Print </button>
+
+                    </div>
+                    <script>
+                        const printBtn = document.getElementById('print');
+
+                        printBtn.addEventListener('click', () => { window.print() });
+
+
+                    </script>
+                </div>
+
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>

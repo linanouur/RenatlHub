@@ -1,0 +1,210 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    /* background-image:url("images/Herosectionpic.png"); */
+    background-size:cover ;
+    /* background: linear-gradient(#213555, #213555); */
+    background-repeat: no-repeat;
+     overflow:hidden;
+     font-family: 'Ubuntu', sans-serif;
+     line-height: 22px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* background: var(--color-darkblue); */
+    background-image: linear-gradient( 115deg,   rgba(18, 18, 59, 0.8), rgba(82, 82, 120, 0.7)), url("images/Herosectionpic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+ .container{
+    width:42vw;
+    height:82vh;
+    margin:10vh auto;
+    background-color: rgba(255, 250, 221, 0.7);
+    border-radius: 40px;
+    
+
+} 
+
+
+span{
+    color: #8ECDDD;
+}
+
+h1{
+    color: #213555;
+    height:10vh;
+   margin-top:10%;
+   
+   width:70%;
+   /* margin-left:-4vh; */
+   font-weight: 700;
+   margin-left:-8%;
+   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.intro{
+    width:100%;
+    height:30%;
+   display:flex;
+   align-items:center;
+   justify-content: space-evenly;
+   margin-bottom: 1%;
+}
+
+.logo{
+    width:25%;
+    height:100%;
+    float: left;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+}
+
+ label{
+    width:80%;
+    display:block;
+    margin:1vh 15% -2% 5vw;
+    text-transform:uppercase;
+    font-size: 2.2vh;
+    font-weight: 400;
+}
+
+input{
+        width: 80%;
+        margin: 3% 0 0 0;
+        padding:10px;
+        border: none;
+        box-shadow: 2px 2px 2px 2px #d2d0d0;
+        border-radius: 30px;
+   
+}
+
+.input{
+    
+    display:block;
+    text-align:center;
+}
+.forgot{
+    text-decoration:none;
+}
+
+.forgot , p ,.login{
+    text-align:center;
+   display:block;
+    margin:3vh auto 0;
+    font-size:2.3vh;
+    
+}
+
+.error{
+    background: #F2DEDE;
+    color: #213555;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+
+
+.signup{
+    display:inline;
+    color:#213555;
+}
+
+.login{
+    width:60%;
+    height:7vh;
+    /* border-top-right-radius:45%;
+    border-bottom-right-radius:45%;
+    border-top-left-radius:45%;
+    border-bottom-left-radius:45%; */
+    border-radius: 30px;
+    background-color:  #22668D;
+    color:white;
+    font-size:2.5vh;
+    font-weight: 550;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.5s;
+    box-shadow: 2px 2px 2px 2px #d2d0d0;
+}
+
+
+.login:hover {
+    background-color: #213555;
+    width: 62%;
+    font-size: 20px;
+}
+
+
+
+.forgot , .noaccount{
+    color:#707070;
+    margin-top:1vh;
+}
+
+message, message2 {
+ color: red;
+ font-size: 0.8rem;
+ font-weight: bold;
+height:10%;
+width:80%;
+margin:auto;
+margin-top:0;
+margin-bottom: 5%;
+display:block;
+}
+
+@media (max-width: 992px) {
+.container{
+    font-size:2vw;
+    width:60vw;
+    height:90vh;
+    margin-top:5VH;
+}
+label{
+    margin-left:12%;
+
+}
+}
+
+@media (max-width: 500px) {
+    .intro{
+        
+        font-size: 3vw;
+    }
+    .container{
+        font-size:2vw;
+        width:80vw;
+        height:85vh;
+        margin-top:5vh;
+    }
+    label{
+        font-size:12px;
+        letter-spacing: 0.1vw;
+        margin-left:12%;
+        width:89%;
+        display:block;
+        text-align: left;
+        
+    }
+}

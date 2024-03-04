@@ -1,0 +1,29 @@
+ <html >  
+    <body > 
+        
+<form>
+    <div id="input-container">
+           <input type="text" name="from" placeholder="From" class="special">
+           <input type="text" name="to" placeholder="To">
+           <input type="submit" >
+    </div>
+    </form>
+   
+   // using jquery update your map
+   <script>
+   $( "form" ).submit(function( event ) {
+     from = $( "input[name='from']" ).val();
+     to   = $( "input[name='to']" ).val();
+   
+     var myOptions = {
+                       origin: new google.maps.LatLng(form),
+                       destination: new google.maps.LatLng(to),
+                       zoom: 10,
+                       mapTypeId: google.maps.MapTypeId.HYBRID
+                   };
+       map.set(myOptions);
+     event.preventDefault();
+   });
+   </script>
+</body>
+ </html>
